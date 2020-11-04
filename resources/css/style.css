@@ -1,0 +1,57 @@
+/*Global Attributes*/
+
+html {
+	font-family: verdana, "sans-serif";
+}
+
+.titlebar, .intro, .schedule, .learn, .thesis, .footer {
+	margin-top: 2%;
+}
+
+/*Title Bar*/
+.titlebar {
+	border: solid black 2px;
+	/*position: fixed;*/
+}
+
+.logo p, .logo li {
+	display: inline;
+}
+
+.logo ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: right; /*Floating aligns the paragraph and list on the same line*/
+	
+}
+
+.logo li {
+	padding-left: 16px;
+}
+
+/*Introduction*/
+.intro {
+	border: solid red 2px;
+}
+
+/*Schedule*/
+.schedule {
+	border: solid purple 2px;
+}
+
+/*Courses*/
+.learn {
+	border: solid green 2px;
+}
+
+/*Thesis*/
+.thesis {
+	border: solid blue 2px;
+}
+
+
+/*Footer*/
+.footer {
+	border: solid pink 2px;
+}
