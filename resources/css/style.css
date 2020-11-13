@@ -1,5 +1,5 @@
 /*Global Attributes*/
-
+/*Remember to clean up css and html at the end of the project/ Thur 12 Nov 2020*/
 html {
 	font-family: verdana, "sans-serif";
 }
@@ -8,7 +8,7 @@ html {
 	margin-top: 2%;
 }
 
-/*Title Bar*/
+/***************************Title Bar*************************/
 .titlebar {
 	border: solid black 2px;
 	/*position: fixed;*/
@@ -30,7 +30,8 @@ html {
 	padding-left: 16px;
 }
 
-/*Introduction*/
+/***********************Introduction***************************/
+
 .intro {
 	width: 100%;
 	border: solid red 2px;
@@ -48,63 +49,91 @@ html {
  .intro h3, .intro h4 {
 	margin: 0 auto;
  }
+ /*Place 'intro' section into a flexbox Thur 12 Nov 2020*/
 
-/*Schedule*/
+/*********************Schedule*******************/
 
-.scheduleContainer {
+.scheduleContainer{
 	border: solid purple 2px;
-	margin: 0 auto;
-	width: 100%
+	float: right;
+	
 }
 
-.scheduleContainer .quoteBlock {
+/*.scheduleContainer .quoteBlock {
+	border: solid purple 2px;
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	z-index: -1;
+	position: relative;
+}*/
+
+/*.schedule*/ .quoteBlock {
 	border: solid purple 2px;
 	position: relative;
-	margin: 0 auto;
+	width: 25%;
+	float: left;
+	margin-left: 2%;
+	padding: 2%;
+	margin-top: 5%;
 	
 }
 
 .schedule {
-	border: solid purple 2px;
-	width: 200px;
+	/*border: solid purple 2px;*/
 	display: flex;
 	flex-direction: column;
+	float: right;
+	margin-left: 2%;
+	margin-top: 5%;
 	
 }
 
 .schedule .orientation {
 	border: solid purple 2px;
 	position: relative;
-	margin: 0 auto;
+	width: 25%;
 	
 }
 
 .schedule .campus {
 	border: solid purple 2px;
 	position: relative;
-	margin: 0 auto;
+	width: 25%;
+	
 }
 
 .schedule .lecture {
 	border: solid purple 2px;
 	position: relative;
-	margin: 0 auto;
-
+	width: 25%;
 }
+/*For this section, in order for both the 'quote' section and the 'schedule' section both need to be set to float, in opposite directions? (may need to fix that later down the line) Also, the container itself needs to float in a direction in order for the content to remain inside the container. Found this out my using console option on the uab web page,  Thur 12 Nov 2020*/
 
+/*Towards the end of this project, the 'schedule' section needs to be combined Thur 12 Nov 2020*/
 
-/*Courses*/
+/********************Courses**********************/
 .learn {
 	border: solid green 2px;
+	flex-direction: column;
+	float: right;
+	margin-left: 2%;
 }
 
-/*Thesis*/
+/********************Thesis************************/
 .thesis {
 	border: solid blue 2px;
+	flex-direction: column;
+	float: right;
+	margin-left: 2%;
 }
 
+/*The 'thesis' section will be similar to the schedule section, set up Thur 12 Nov 2020 */
 
-/*Footer*/
+/********************Footer************************/
 .footer {
 	border: solid pink 2px;
+	flex-direction: column;
+	float: right;
+	margin-left: 2%;
 }
