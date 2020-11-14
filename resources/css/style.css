@@ -1,5 +1,6 @@
 /*Global Attributes*/
 /*Remember to clean up css and html at the end of the project/ Thur 12 Nov 2020*/
+/*For whatever reason, the 'schedule block' and 'orientation block' are stack on top each other Fri 14 Nov 2020*/
 html {
 	font-family: verdana, "sans-serif";
 }
@@ -30,9 +31,30 @@ html {
 	padding-left: 16px;
 }
 
-/***********************Introduction***************************/
+/***********************Opening Pitch***************************/
 
-.intro {
+
+.openContainer {
+	border: solid red 2px;
+	flex-direction: column; /*Not needed for the desktop version (I think) but will be needed for mobile version Fri 14 Nov 2020*/
+	float: right;
+	margin-left: 2%;
+}
+
+.pitchPic {
+	float: left;
+	/*width: 25%;*/ /*DONT TOUCH until picture is inserted*/
+	border: red solid 1px;
+}
+
+.pitch {
+	float: right;
+	width: 25%;
+	border: red solid 1px;
+}
+
+
+/*.intro {
 	width: 100%;
 	border: solid red 2px;
 }
@@ -48,15 +70,43 @@ html {
  
  .intro h3, .intro h4 {
 	margin: 0 auto;
- }
+ }*/
+ 
  /*Place 'intro' section into a flexbox Thur 12 Nov 2020*/
 
 /*********************Schedule*******************/
 
-.scheduleContainer{
+.scheduleContainer {
 	border: solid purple 2px;
 	float: right;
-	
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.quoteBlock {
+	border: dotted 5px purple;
+	width: 25%;
+	flex-grow: 1;
+	/*float: left;*/
+}
+
+.eventBlock {
+	border: dotted 5px purple;
+	width: 25%;
+	/*float: right;*/
+}
+
+.orientation, .campus, .lecture {
+	border: solid 8px purple;
+}
+
+/*.scheduleContainer{
+	/*border: solid purple 2px;
+	float: right;
+	flex-direction: column;
+	display; column;
+	width: 100%;	
 }
 
 /*.scheduleContainer .quoteBlock {
@@ -68,70 +118,102 @@ html {
 	position: relative;
 }*/
 
-/*.schedule*/ .quoteBlock {
-	border: solid purple 2px;
+/*.schedule*/ /*.quoteBlock {
+	border: solid purple 1px;
 	position: relative;
 	width: 25%;
 	float: left;
-	margin-left: 2%;
-	padding: 2%;
 	margin-top: 5%;
 	
 }
 
 .schedule {
 	/*border: solid purple 2px;*/
-	display: flex;
-	flex-direction: column;
-	float: right;
-	margin-left: 2%;
-	margin-top: 5%;
-	
-}
+	/*flex-direction: column;*/
+	/*float: right;*/
+	/*margin-top: 5%;*/
+/*}
 
 .schedule .orientation {
-	border: solid purple 2px;
-	position: relative;
-	width: 25%;
+	border: solid purple 5px;
+	/*position: relative;*/
+	/*width: 25%;
 	
 }
 
 .schedule .campus {
-	border: solid purple 2px;
-	position: relative;
-	width: 25%;
+	border: solid purple 10px;
+	/*position: relative;*/
+	/*width: 25%;
 	
 }
 
 .schedule .lecture {
-	border: solid purple 2px;
-	position: relative;
-	width: 25%;
-}
+	border: dotted purple 5px;
+	/*position: relative;*/
+	/*width: 25%;
+}*/
 /*For this section, in order for both the 'quote' section and the 'schedule' section both need to be set to float, in opposite directions? (may need to fix that later down the line) Also, the container itself needs to float in a direction in order for the content to remain inside the container. Found this out my using console option on the uab web page,  Thur 12 Nov 2020*/
 
 /*Towards the end of this project, the 'schedule' section needs to be combined Thur 12 Nov 2020*/
 
 /********************Courses**********************/
-.learn {
+.learnContainer {
 	border: solid green 2px;
-	flex-direction: column;
-	float: right;
-	margin-left: 2%;
+	/*flex-direction: column;*/
+	/*float: right;*/
+	display: flex;
+}
+
+.heading {
+	border: solid green 4px;
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.classes {
+	border: solid green 4px;
+	justify-content: space-evenly;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.data, .marketing, .business, .design, .computerArt, .software {
+	border: dotted green 6px;
+	width: 30%;
 }
 
 /********************Thesis************************/
-.thesis {
+.thesisContainer {
 	border: solid blue 2px;
-	flex-direction: column;
-	float: right;
-	margin-left: 2%;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	/*flex-direction: row; /*Not needed for the desktop version (I think) but will be needed for mobile version Fri 14 Nov 2020*/
+	/*float: right;*/
+}
+
+.thesisInfo, .exhibits {
+	border: solid blue 1px;
+}
+
+.exhibits {
+	/*float: right;*/
+	width: 25%;
+}
+
+.thesisInfo {
+	/*float: left;*/
+	width: 25%;
+	flex-grow: 1;
 }
 
 /*The 'thesis' section will be similar to the schedule section, set up Thur 12 Nov 2020 */
 
 /********************Footer************************/
-.footer {
+.footerContainer {
 	border: solid pink 2px;
 	flex-direction: column;
 	float: right;
