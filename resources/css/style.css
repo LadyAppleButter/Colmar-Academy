@@ -36,19 +36,22 @@ html {
 
 .openContainer {
 	border: solid red 2px;
-	flex-direction: column; /*Not needed for the desktop version (I think) but will be needed for mobile version Fri 14 Nov 2020*/
-	float: right;
+ /*Not needed for the desktop version (I think) but will be needed for mobile version Fri 14 Nov 2020*//**/
+	display: flex;
 	margin-left: 2%;
+	justify-content: space-around; 
 }
 
 .pitchPic {
-	float: left;
-	/*width: 25%;*/ /*DONT TOUCH until picture is inserted*/
+	width: 25%; /*DONT TOUCH until picture is inserted*/
 	border: red solid 1px;
 }
 
+.pitchPic img{
+	width: 20%;
+}
+
 .pitch {
-	float: right;
 	width: 25%;
 	border: red solid 1px;
 }
@@ -91,6 +94,10 @@ html {
 	/*float: left;*/
 }
 
+.quoteBlock img{
+	width: 20%;
+}
+
 .eventBlock {
 	border: dotted 5px purple;
 	width: 25%;
@@ -99,6 +106,10 @@ html {
 
 .orientation, .campus, .lecture {
 	border: solid 8px purple;
+}
+
+.eventBlock img{
+	width: 30%;
 }
 
 /*.scheduleContainer{
@@ -158,18 +169,17 @@ html {
 /*Towards the end of this project, the 'schedule' section needs to be combined Thur 12 Nov 2020*/
 
 /********************Courses**********************/
+.heading {
+	border: solid green 4px;
+	display: flex;	
+}
+
+
 .learnContainer {
 	border: solid green 2px;
 	/*flex-direction: column;*/
 	/*float: right;*/
 	display: flex;
-}
-
-.heading {
-	border: solid green 4px;
-	display: flex;
-	flex-direction: row;
-	
 }
 
 .classes {
@@ -180,9 +190,15 @@ html {
 	flex-wrap: wrap;
 }
 
+.classes img {
+	width: 25%;
+}
+
 .data, .marketing, .business, .design, .computerArt, .software {
 	border: dotted green 6px;
 	width: 30%;
+	/*align-content: space-evenly;*/
+	flex: 30%;
 }
 
 /********************Thesis************************/
@@ -195,6 +211,11 @@ html {
 	/*float: right;*/
 }
 
+.thesisTitle{
+	border: solid blue 3px;
+	display: flex;
+}
+
 .thesisInfo, .exhibits {
 	border: solid blue 1px;
 }
@@ -202,6 +223,14 @@ html {
 .exhibits {
 	/*float: right;*/
 	width: 25%;
+}
+
+.exhibits img{
+	width: 30%;
+}
+
+.thesisVideo video{
+	width: 20%;
 }
 
 .thesisInfo {
@@ -215,7 +244,22 @@ html {
 /********************Footer************************/
 .footerContainer {
 	border: solid pink 2px;
-	flex-direction: column;
-	float: right;
-	margin-left: 2%;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.legalDocs ul {
+	list-style-type: none;
+}
+
+.legalDocs li{
+	display: inline;
+}
+
+.copyright, .legalDocs {
+	border: solid pink 4px;
+	width: 25%;
+	
 }
