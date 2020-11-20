@@ -36,24 +36,49 @@ html {
 
 .openContainer {
 	border: solid red 2px;
- /*Not needed for the desktop version (I think) but will be needed for mobile version Fri 14 Nov 2020*//**/
+ /*Not needed for the desktop version (I think) but will be needed for mobile version Fri 14 Nov 2020*/
 	display: flex;
 	margin-left: 2%;
 	justify-content: space-around; 
+	background-color: rgb(211,211,211);/*lightgray*/
+	color:  rgb(51,51,51); /*dark gray*/
 }
 
 .pitchPic {
-	width: 25%; /*DONT TOUCH until picture is inserted*/
+	width: 60%; /*DONT TOUCH until picture is inserted*/
+	height: 60%;
 	border: red solid 1px;
+	margin: 32px 24px; /*margin: top bottom left right*/
 }
 
 .pitchPic img{
-	width: 20%;
+	width: 100%;
+	height: 100%;
 }
 
 .pitch {
-	width: 25%;
+	width: 50%;
 	border: red solid 1px;
+	text-align: left;
+	padding: 30px;
+}
+
+.pitch h4 {
+	font-size: 15px;
+}
+
+.pitch h3 {
+	font-size: 24px;
+}
+
+.pitch button {
+	border: none;
+	font-size: 15px;
+	color: rgb(211,211,211);
+	background-color:  rgb(51,51,51);
+	padding-bottom: 8px;
+	padding-top: 8px;
+	width: 100%;
 }
 
 
