@@ -132,14 +132,18 @@ html {
 	border: solid 8px purple;
 }
 
+.eventBlock h5{
+	font-size: 20px;
+}
+
 .eventBlock img{
-	width: 35%;
+	width: 50%;
 	height: auto;
 }
 
 .orientationText, .campusText, .lectureText{
 	width: 65%;
-	float: right; /*This needs to be fix, right now the text does not shrink when the screen is minimize but when the screen is expanded the picture and the text are align perfectly Thurs 19 Nov 2020*/
+	/*This needs to be fix, right now the text does not shrink when the screen is minimize but when the screen is expanded the picture and the text are align perfectly Thurs 19 Nov 2020*/
 }
 
 /*.scheduleContainer{
@@ -283,7 +287,6 @@ html {
 
 .exhibit1Text, .exhibit2Text{
 	width: 65%;
-	float: right;
 	
 	
 }
@@ -311,7 +314,9 @@ html {
 	justify-content: space-between;
 }
 
-
+.copyright  p {
+	padding-left: 24px;
+}
 
 .legalDocs ul {
 	list-style-type: none;
